@@ -20,8 +20,8 @@ for i, pathogen in enumerate(pathogens):
 pathogen_choice = int(input("Select a pathogen by number: "))
 selected_pathogen = pathogens[pathogen_choice - 1]
 
-# Get unique 'Serotype/Species/Subgroup' values
-serotypes = df['Serotype/Species/Subgroup'].unique()
+# Get unique 'Serotype/Species/Subgroup' values for the selected pathogen
+serotypes = df[df['Pathogen'] == selected_pathogen]['Serotype/Species/Subgroup'].unique()
 print("\nSerotypes:")
 for i, serotype in enumerate(serotypes):
     print(f"{i+1}. {serotype}")
@@ -72,11 +72,10 @@ for label in labels:
 # Format the filename
 filename = selected_pathogen + '_' + '_'.join(selected_serotypes)
 filename = filename.replace(':', '-')  # replace ':' with '-'
-
+filename = filename.replace('/', '_')  # replace '/' with '_'
 # Save the figure and data
 df.to_csv(f"{filename}.csv", index=False)
 plt.savefig(f"{filename}.png",dpi=300)
 
 # Show the plot
 plt.show()
-
