@@ -31,5 +31,5 @@ Select up to 4 serotypes by number (separated by space): 33
 2. Past two years average and % Change
 Select one by number: 2
 </pre>
-<img src='' 
+<img src='https://github.com/y-takefuji/pasero/raw/main/Salmonella_Sundsvall.png' width=640 hight=480>
 
