@@ -3,9 +3,9 @@
 pasero is a PyPI tool to visualize "Number of isolates" or "% Change" against the baseline of "Past two years average". pasero can be used for detecting outbreaks of pathogens and serotypes.
 
 $ pip install pasero
+
 <pre>
 $ pasero
-$ python pasero.py 
 Pathogens:
 1. Campylobacter
 2. STEC
