@@ -2,7 +2,7 @@
 
 pasero is a PyPI tool to visualize "Number of isolates" or "% Change" against the baseline of "Past two years average". pasero can be used for detecting outbreaks of pathogens and serotypes.
 Execute the pip command provided below in your system terminal to install Pasero. 
-Note that the symbol ‘$’ signifies the system prompt. Pasero is an interactive system to show either 'Number of isolates' or 'Past two years average' as baseline and '% Change'. pasero2.py is the colored version to display the result.
+Note that the symbol ‘$’ signifies the system prompt. Pasero is an interactive system to show either 'Number of isolates' or 'Past two years average' as baseline and '% Change'. Pasero2.py is the color-enhanced version designed to display results vividly, while pasero.py is specifically tailored for individuals with color vision deficiencies.
 
 $ pip install pasero
 
